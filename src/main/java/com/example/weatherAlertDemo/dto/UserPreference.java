@@ -7,13 +7,15 @@ public class UserPreference {
     private String emailId;
     private String userCity;
     private String cityPreference;
-    private String tempraturePreference;
+    private int tempraturePreference;
     private String criteria;
+    private String notificationType;
+    
     public UserPreference(){
 
     }
 
-    public UserPreference(String userName, String mobileNo, String emailId, String userCity, String cityPreference, String tempraturePreference, String criteria) {
+    public UserPreference(String userName, String mobileNo, String emailId, String userCity, String cityPreference, int tempraturePreference, String criteria, String notificationType) {
         this.userName = userName;
         this.mobileNo = mobileNo;
         this.emailId = emailId;
@@ -21,6 +23,7 @@ public class UserPreference {
         this.cityPreference = cityPreference;
         this.tempraturePreference = tempraturePreference;
         this.criteria = criteria;
+        this.notificationType = notificationType;
     }
 
     public String getUserName() {
@@ -43,7 +46,7 @@ public class UserPreference {
         return cityPreference;
     }
 
-    public String getTempraturePreference() {
+    public int getTempraturePreference() {
         return tempraturePreference;
     }
 
@@ -71,7 +74,7 @@ public class UserPreference {
         this.cityPreference = cityPreference;
     }
 
-    public void setTempraturePreference(String tempraturePreference) {
+    public void setTempraturePreference(int tempraturePreference) {
         this.tempraturePreference = tempraturePreference;
     }
 
@@ -79,10 +82,18 @@ public class UserPreference {
         this.criteria = criteria;
     }
 
+	public String getNotificationType() {
+		return notificationType;
+	}
+
+	public void setNotificationType(String notificationType) {
+		this.notificationType = notificationType;
+	}
+
 	@Override
 	public String toString() {
 		return "UserPreference [userName=" + userName + ", mobileNo=" + mobileNo + ", emailId=" + emailId
 				+ ", userCity=" + userCity + ", cityPreference=" + cityPreference + ", tempraturePreference="
-				+ tempraturePreference + ", criteria=" + criteria + "]";
+				+ tempraturePreference + ", criteria=" + criteria + ", notificationType=" + notificationType + "]";
 	}
 }

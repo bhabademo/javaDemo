@@ -66,7 +66,8 @@ public class UserPreferenceServiceImpl implements UserPreferenceService {
         preference.setCity(userPreference.getCityPreference());
         preference.setTemprature(userPreference.getTempraturePreference());
         preference.setCriteria(userPreference.getCriteria());
-
+        preference.setNotificationType(userPreference.getNotificationType());
+        
         return preference;
     }
 

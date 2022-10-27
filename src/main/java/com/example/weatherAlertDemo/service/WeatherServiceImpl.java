@@ -25,7 +25,6 @@ public class WeatherServiceImpl implements WeatherService {
         int upperbound = 50;
         //generate random values from 0-50
         int randomTemprature = random.nextInt(upperbound);
-        randomTemprature = 20;
         return randomTemprature;
     }
 }

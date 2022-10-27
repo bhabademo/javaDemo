@@ -6,7 +6,7 @@ public class TestConstants {
     public static final String TEST_MOBILRNO = "423637348";
     public static final String TEST_EMAILID = "demoUser@gmail.com";
     public static final String TEST_CITY_PREFERENCE = "cityPreference";
-    public static final String TEST_TEMP_PREFERENCE = "tempPreference";
+    public static final int TEST_TEMP_PREFERENCE = 10;
     public static final String TEST_CRITERIA = "greater";
 
     public static final int TEST_USERID = 25;

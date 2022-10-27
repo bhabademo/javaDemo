@@ -25,7 +25,7 @@ public class Preference implements Serializable {
     private String city;
 
     @Column(name="temprature")
-    private String temprature;
+    private int temprature;
 
     @Column(name="criteria")
     private String criteria;

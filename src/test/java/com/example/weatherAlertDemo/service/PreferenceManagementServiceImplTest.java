@@ -57,8 +57,8 @@ class PreferenceManagementServiceImplTest {
      */
     @Test
     void testUpdateAllMatchingPreferences() {
-    	Preference preference1 = new Preference(200, "London", "10", "greater", true, 25, "APP");
-        Preference preference2 = new Preference(200, "Washington", "10", "greater", false, 29, "APP");
+    	Preference preference1 = new Preference(200, "London", 10, "greater", true, 25, "APP");
+        Preference preference2 = new Preference(200, "Washington", 10, "greater", false, 29, "APP");
         List<Preference> preferences = new ArrayList<Preference>();
         preferences.add(preference1);
         preferences.add(preference2);

@@ -59,7 +59,7 @@ public class PreferenceManagementServiceImpl implements PreferenceManagementServ
         int cityTemprature = weatherService.getCityTemperature(preference.getCity());
         LOGGER.info("Random city temperature retieved from weatherService - " + cityTemprature);
         String criteria = preference.getCriteria();
-        int tempratureCriteria = Integer.parseInt(preference.getTemprature());
+        int tempratureCriteria = preference.getTemprature();
 
         if(Criteria.GT.getValue().equals(criteria)){
             if(cityTemprature > tempratureCriteria){
